@@ -1,0 +1,138 @@
+.auth{
+    // padding: 30px 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    
+    &_signup{
+        margin: 30px;
+        box-sizing: border-box;
+        width: 50%;
+        text-align: center;
+
+        input{
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px 15px;
+            height: 40px;
+            border: 2px solid #C4C4C4;
+            border-radius: 5px;
+            color: $color-formInput;
+
+            &:focus{
+                border: 2px solid $color-primary;
+                outline: none !important;
+            }
+        }
+        
+        &-phone{
+            appearance: none;
+        }
+
+        option{
+            padding: 10px 15px;
+            // background: red;
+            font-size: 2em;
+        }
+
+        &-password{
+            position: relative;
+            img{
+                position: absolute;
+                right: 20px;
+                width: 20px;
+                cursor: pointer;
+            }
+            .notvisible{
+                top: 30px;
+            }
+            .visible{
+                top: 23px;
+            }
+        }
+
+        &-submit{
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 7px;
+            border: 1px solid $color-btnInactive;
+            background: $color-btnInactive;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: white;
+        }
+
+        &-active{
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 7px;
+            border: 1px solid $color-primary;
+            background: $color-primary;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: white;
+        }
+
+        &-text1{
+            color: #292929;
+            span{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &_otp{
+        position: relative;
+        margin-top: 40px;
+        input{
+            margin: 10px 0px 10px 0;
+            padding: 10px 15px;
+            border: 2px solid #C4C4C4;
+            border-radius: 5px;
+            width: 50px !important; 
+            height: 45px !important; 
+            color: $color-formInput;
+            
+            @media(max-width: 450px){
+                width: 12% !important; 
+                height: 40px !important; 
+                margin: 10px 15px 10px 0 !important;
+                padding: 5px !important;
+            }
+
+            @media(max-width: 400px){
+                margin: 10px 10px 10px 0 !important;
+            }
+
+            &:focus{
+                border: 2px solid $color-primary;
+                outline: none !important;
+            }
+        }
+
+        &-show{
+            width: 20px;
+            position: absolute;
+            top: 25px;
+            right: 17px;
+            cursor: pointer;
+
+            @media(max-width: 450px){
+            top: 20px;
+            right: 0;
+            }
+        }
+
+        &-text1{
+            span{
+                color: $color-primary;
+                cursor: pointer;
+            }
+        }
+    }
+}

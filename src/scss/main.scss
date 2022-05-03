@@ -1,0 +1,13 @@
+// abstract
+@import "../scss/abstract/mixins";
+@import "../scss/abstract/variables";
+
+// base
+@import "../scss/base/base";
+
+// components
+@import "../scss/component/home";
+@import "../scss/component/navbar";
+
+// pages
+@import "../scss/pages/auth";

@@ -1,0 +1,218 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3em;
+  height: 80px;
+  padding: 1em 4em;
+}
+
+.navbar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-header .ul-light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.navbar-header .ul-light li {
+  list-style: none;
+  color: #111111;
+  font-size: 1.1em;
+  margin-left: 20px;
+}
+
+.navbar-signins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-signins button {
+  background: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  margin-left: 10px;
+}
+
+.auth {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.auth_signup {
+  margin: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+
+.auth_signup input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 15px;
+  height: 40px;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+  color: #8A8A8A;
+}
+
+.auth_signup input:focus {
+  border: 2px solid #296AFC;
+  outline: none !important;
+}
+
+.auth_signup-phone {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.auth_signup option {
+  padding: 10px 15px;
+  font-size: 2em;
+}
+
+.auth_signup-password {
+  position: relative;
+}
+
+.auth_signup-password img {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.auth_signup-password .notvisible {
+  top: 30px;
+}
+
+.auth_signup-password .visible {
+  top: 23px;
+}
+
+.auth_signup-submit {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 7px;
+  border: 1px solid #D0D0D0;
+  background: #D0D0D0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+}
+
+.auth_signup-active {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 7px;
+  border: 1px solid #296AFC;
+  background: #296AFC;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+}
+
+.auth_signup-text1 {
+  color: #292929;
+}
+
+.auth_signup-text1 span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth_otp {
+  position: relative;
+  margin-top: 40px;
+}
+
+.auth_otp input {
+  margin: 10px 0px 10px 0;
+  padding: 10px 15px;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+  width: 50px !important;
+  height: 45px !important;
+  color: #8A8A8A;
+}
+
+@media (max-width: 450px) {
+  .auth_otp input {
+    width: 12% !important;
+    height: 40px !important;
+    margin: 10px 15px 10px 0 !important;
+    padding: 5px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .auth_otp input {
+    margin: 10px 10px 10px 0 !important;
+  }
+}
+
+.auth_otp input:focus {
+  border: 2px solid #296AFC;
+  outline: none !important;
+}
+
+.auth_otp-show {
+  width: 20px;
+  position: absolute;
+  top: 25px;
+  right: 17px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .auth_otp-show {
+    top: 20px;
+    right: 0;
+  }
+}
+
+.auth_otp-text1 span {
+  color: #296AFC;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

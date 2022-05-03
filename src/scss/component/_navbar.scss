@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em; 
+    height: 80px;
+    padding: 1em 4em;
+
+    &-header{
+        display: flex;
+        align-items: center;
+    
+
+    .ul-light{
+        display: flex;
+        margin-left: 20px;
+
+        li{
+            list-style: none;
+            color: #111111;
+            font-size: 1.1em;
+            margin-left: 20px;
+        }
+    }
+
+    }
+    &-signins{
+        display: flex;
+        align-items: center;
+
+        button{
+            background: orange;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid orange;
+            margin-left: 10px;
+        }
+    }
+
+    
+    
+}
