@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import { Link } from "react-router-dom";
+// import { ToastContainer, toast } from "react-toastify";
+// import { Link } from "react-router-dom";
 
 function SignUp () {
-    const [data, setData] = useState({})
 
     const [formValid, setFormValid] = useState(false)
     const [form, setForm] = useState({
@@ -13,6 +12,8 @@ function SignUp () {
         email: "",
         phoneNumber: ""
     });
+
+    const [name, setName] = useState("Prudence")
 
     useEffect(()=>{
         if (
@@ -42,21 +43,22 @@ function SignUp () {
         })
     }
 
-  const submitForm = () => {
-    setData({
-        ...form
-    })
-    console.log(data)
-
-  }
+    const submitHandler = (e) => {
+        e.preventDefault()
+        sessionStorage.setItem('userDetails', JSON.stringify({...form}))
+        
+        window.location="/welcome"
+    }
 
     
 
     return(
         <div className="auth_signup">
-            <ToastContainer />
+            {/* <ToastContainer /> */}
+           
             <div>
-                <form onSubmit={submitForm} >
+            <h1> Sign Up</h1>
+                <form onSubmit={submitHandler}  >
                     
                     <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
                     <p> {form.name} </p>
@@ -74,12 +76,13 @@ function SignUp () {
                     </div>
                     <button 
                         className= {formValid?"auth_signup-active":"auth_signup-submit"}
-                        type="submit"
-                        id="actionBtn"
-                        disabled={!formValid}
+                        // type="submit"
+                        // id="actionBtn"
+                        // disabled={!formValid}
                     >
                         Sign Up
                     </button>
+
                 </form>
             </div>
 
