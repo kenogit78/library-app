@@ -11,21 +11,7 @@
 // import Schedule from "../components/Dashboard/Schedule";
 // import Settings from "../components/Dashboard/Settings";
 // import Support from "../components/Dashboard/Support";
-// import logo from "../assets/white-logo.svg";
-// import home from "../assets/sidebar/home.svg";
-// import dash from "../assets/sidebar/dash.svg";
-// import account from "../assets/sidebar/account.svg";
-// import income from "../assets/sidebar/income.svg";
-// import creditInsight from "../assets/sidebar/credit-insight.svg";
-// import app from "../assets/sidebar/app.svg";
-// import radar from "../assets/sidebar/radar.svg";
-// import setting from "../assets/sidebar/setting.svg";
-// import identity from "../assets/sidebar/identity.svg";
-// import logout from "../assets/sidebar/logout.svg";
-// import drp from "../assets/sidebar/drop-down.svg";
-// import cancel from "../assets/cancel.svg";
-// import menu from "../assets/menu.svg";
-// import warning from "../assets/menu.svg";
+
 
 
 
@@ -34,7 +20,7 @@
 //     const location = useLocation().pathname;
 //     const [path, setPath] = useState("");
     
-//     let refreshToken = '';
+//   
  
 //     useEffect(()=>{
 //         setPath(location);
