@@ -1,0 +1,351 @@
+.home{
+    // border: 2px solid red;
+    padding-top: 20px;
+    &_main{
+        margin: 30px 40px;
+
+        @media(max-width: $mobile){
+            margin: 30px 30px 30px 10px;
+        }
+
+        &-topText{
+            width: 100%;
+            h5{
+                font-size: 1.2em;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 1em;
+            }
+
+            &-search {
+                display: flex;
+                justify-content: space-between;
+                /* align-items: center; */
+                flex-direction: column;
+            }
+
+            &-searchDiv {
+                margin-left: auto;
+                border-radius: 10px;
+                display: flex;    
+                width: 230px;
+                height: 40px;
+                padding: 0.5em;
+                align-items: center;
+                background: #FFFFFF;
+                border: 1px solid #58595A;
+                margin-top: -40px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                /* margin-bottom: 50px; */
+
+                @media(max-width: $tab-port){
+                    margin: 0;
+                }
+
+                input{
+                    flex: 1;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    padding-left: 0.5em;
+                    font-weight: 400;
+                    font-size: 12.64px;
+                    line-height: 16px;
+                    color: #06152B;
+                    opacity: 0.5
+                }
+              }
+        }
+
+        &-boxes{
+            box-sizing: border-box;
+            margin: 40px 0;
+
+            h6{
+                font-family: $font-main !important;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            p{
+                font: 1em;
+            }
+
+            &-1{
+                border: 1px solid $color-sidebar;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 40px 0px 0;
+                text-align: center;
+                min-height: 300px;
+                position: relative;
+
+                button{
+                    width: 150px;
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50% - 75px);
+                    border: 1px solid $color-sidebar;
+                    border-radius: 8px;
+                    background-color: transparent;
+                    padding: 8px 15px;
+                    text-align: center;
+                    font-weight: 500;
+
+                    a {
+                        text-decoration: none;
+                        color:#000000
+                      }
+                }
+            }
+
+            &-2{
+                border: 1px solid $color-sidebar;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                min-height: 340px;
+                color: white;
+                position: relative;
+                background-color: $color-sidebar;
+
+                @media(max-width: $desktop){
+                    margin: 40px 0px 0;
+                    min-height: 300px;
+                }
+
+                .top-button {
+                    width: 76px;
+                    height: 17.51px;
+                    font-size: 7.76972px;
+                    color: #fff;
+                    background: #FFC702;
+                    border-radius: 3.72549px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        margin-bottom: none !important
+                    }
+                }
+                
+                img{
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 50px;
+                    padding: 10px;
+                    margin: 20px 0 15px;
+                }
+
+                button{
+                    width: 150px;
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50% - 75px);
+                    border: 1px solid white;
+                    border-radius: 8px;
+                    background-color: white;
+                    padding: 8px 15px;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &-wallet{
+            border: 1px solid $color-sidebar;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: $color-sidebar;
+            max-width: 400px;
+            p{
+                margin: 0 !important;
+            }
+            h5{
+                font-size: 1.5em;
+                margin: 0 0 30px;
+            }
+            &-add{
+                padding: 5px 15px;
+                background: white;
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+
+            &-view{
+                background: transparent;
+                border-color: transparent;
+                color: white;
+                float: right;
+            }
+        }
+    }
+
+    &_wallet{
+        // display: flex;
+        margin: 40px;
+        @media(max-width: $tab-port){
+            margin: 15px 40px 15px 15px;
+        }
+
+        &-section1{
+            &-total{
+                display: flex;
+                border: 0.75px solid #4C8BF5;
+                box-sizing: border-box;
+                box-shadow: -1px 4px 17px -11px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                padding: 20px;
+                max-width: 250px;
+                
+                &-img{
+                    background-color: #34A853;
+                    width: 35px !important;
+                    height: 35px !important;
+                    border-radius: 50%;
+                    margin: 8px 10px 0 0;
+
+                    img{
+                        width: 21px;
+                        margin: 7px 0 0 7px;
+                    }
+                }
+
+                &-text{
+                    p{
+                        margin: 0 !important;
+                    }
+                    h4{
+                        font-size: 1.3em !important;
+                        margin: 0 !important;
+                    }
+                }
+            }
+
+            &-fund{
+                padding: 10px 20px;
+                margin: 20px 0;
+                background: $color-sidebar;
+                border: 1px solid $color-sidebar;
+                border-radius: 6px;
+                color: white;
+
+                img{
+                    width: 20px;
+                    margin: -3px 8px 0 0;
+                }
+            }
+        }
+
+        &-section2{
+            &-history{
+                border: 0.75px solid #4C8BF5;
+                width: 75%;
+                border-radius: 15px;
+                margin-top: 30px;
+
+                @media(max-width: $desktop){
+                    width: 100%;
+                }
+
+                &-topic{
+                    font-size: 1.3em;
+                    margin: 20px;
+                }
+
+                &-info{
+                    margin: 20px;
+
+                    &-single{
+                        display: flex;
+                        align-items: flex-start;
+                        @media(max-width: $mobile){
+                            margin-left: -20px;
+                        }
+
+                        img{
+                            margin: -2px 10px 0 0;
+                        }
+
+                        .main{
+                            width: 100%;
+                            @media(min-width: $tab-land){
+                                display: flex;
+                            }
+
+                            p{
+                                margin: 0;
+                                color: #9EA2A9;
+                            }
+
+                            &-desc{
+                                &-topic{
+                                    color: black !important;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            &-amount{
+                                margin-left: auto;
+                                &-value{
+                                    font-weight: 700;
+                                    @media(min-width: $tab-land){
+                                        text-align: right;
+                                    }
+                                }
+                                .Credit{
+                                    color: #5BC044 !important;
+                                }
+                                .Debit{
+                                    color: #FA582E;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-fund{
+                border: 0.75px solid #4C8BF5;
+                width: 400px;
+                border-radius: 15px;
+                padding: 15px;
+                @media(max-width: $mobile){
+                    width: 90%;
+                }
+
+                h5{
+                    font-size: 1.5em;
+                    font-weight: 700;
+                }
+
+                form{
+                    box-sizing: border-box;
+                    input{
+                        width: 100%;
+                        margin: 10px 0;
+                        padding: 5px 15px;
+                        height: 40px;
+                        border: 2px solid #C4C4C4;
+                        border-radius: 5px;
+                        color: $color-formInput;
+                    }
+
+                    button{
+                        margin: 20px 0 50px;
+                        padding: 10px 20px;
+                        width: 100%;
+                        background: $color-sidebar;
+                        border: 1px solid $color-sidebar;
+                        border-radius: 6px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

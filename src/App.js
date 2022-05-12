@@ -4,17 +4,22 @@ import Home from "./pages/Home"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SignUp from "./components/Auth/SignUp";
 import Welcome from "./components/Welcome";
-// import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard";
+import ProtectedRoutes from "./components/ProtectedRoutes";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home />}/>
+            <Route path="/home" element={<Home />}/>
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/welcome" element={<Welcome />}/>
-            {/* <Route path="/dashboard" element={<Dashboard />}/> */}
+
+            <Route element={<ProtectedRoutes /> } >
+              <Route path="/*" element={<Dashboard  />}/>
+            </Route>
+          
         </Routes>
       </BrowserRouter>
     </div>

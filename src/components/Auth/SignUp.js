@@ -13,7 +13,6 @@ function SignUp () {
         phoneNumber: ""
     });
 
-    const [name, setName] = useState("Prudence")
 
     useEffect(()=>{
         if (
@@ -28,11 +27,7 @@ function SignUp () {
         } else {
             setFormValid(false)
         }
-    }, [form.name, 
-        form.country,
-        form.address, 
-        form.email, 
-        form.phoneNumber])
+    }, [form])
 
    
 
@@ -47,7 +42,7 @@ function SignUp () {
         e.preventDefault()
         sessionStorage.setItem('userDetails', JSON.stringify({...form}))
         
-        window.location="/welcome"
+        window.location="/"
     }
 
     
