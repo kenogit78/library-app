@@ -544,6 +544,45 @@ html {
   font-size: 2em;
 }
 
+.bookstore {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bookstore-card {
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 2em;
+}
+
+.bookstore-card-image {
+  width: 397px;
+  height: 400px;
+}
+
+.bookstore-card-image img {
+  width: 100%;
+  height: 100%;
+}
+
 .settings_members {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

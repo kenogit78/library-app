@@ -1,11 +1,13 @@
-import { data } from 'autoprefixer';
+
 import React, { useEffect, useState } from 'react'
 
 const Customer = () => {
     const [customers, setCustomers] = useState([])
 
+    const url = 'https://fakerapi.it/api/v1/persons?_quantity=10';
+
     useEffect(() => {
-        fetch('https://fakerapi.it/api/v1/persons?_quantity=10')
+        fetch(url)
         .then(response => response.json())
         .then(data => setCustomers(data.data))
    
