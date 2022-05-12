@@ -15,9 +15,6 @@ import logout from "../assets/svg/sidebar/logout.svg";
 import menu from "../assets/svg/menu.svg";
 
 
-
-
-
 function Dashboard () {
     const location = useLocation().pathname;
     const [path, setPath] = useState("");
