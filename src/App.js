@@ -6,6 +6,7 @@ import SignUp from "./components/Auth/SignUp";
 import Welcome from "./components/Welcome";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoutes from "./components/ProtectedRoutes";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (

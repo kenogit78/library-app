@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-// import { ToastContainer, toast } from "react-toastify";
-// import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function SignUp () {
 
@@ -41,15 +41,21 @@ function SignUp () {
     const submitHandler = (e) => {
         e.preventDefault()
         sessionStorage.setItem('userDetails', JSON.stringify({...form}))
+
+        toast.success(`Welcome to Libraree ${form.name}`)
+
+        setTimeout(() => {
+            window.location="/"
+        }, 5000);
         
-        window.location="/"
+        
     }
 
     
 
     return(
         <div className="auth_signup">
-            {/* <ToastContainer /> */}
+            <ToastContainer />
            
             <div>
             <h1> Sign Up</h1>

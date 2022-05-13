@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 const Customer = () => {
     const [customers, setCustomers] = useState([])
 
-    const url = 'https://fakerapi.it/api/v1/persons?_quantity=10';
+    const url = process.env.REACT_APP_CUSTOMER_URL;
 
     useEffect(() => {
         fetch(url)

@@ -1,16 +1,33 @@
-import { data } from 'autoprefixer'
+
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Bookstore = () => {
 
   const [books, setBooks] = useState([])
 
-  const url = 'https://fakerapi.it/api/v1/books?_quantity=10';
+  const url = process.env.REACT_APP_BOOKSTORE_URL;
 
   useEffect(() => {
     axios.get(url)
-    .then(response => setBooks(response.data.data) )
+    .then((response) => {
+      console.log(response)
+      if(response.status === 200){
+        toast.success('Books loaded successfully')
+        setBooks(response.data.data)
+      }else{
+        toast.error("No data found")
+      }
+    })
+    .catch((err) => {
+      if(err.response){
+        toast.error('something went wrong')
+      }
+    } )
+
+
   }, [])
 
   console.log(books)
@@ -20,7 +37,7 @@ const Bookstore = () => {
   
   return (
     <div className='bookstore'>
-
+      <ToastContainer />
       {
         books ? books.map((book, idx )=> (
           <div key={idx} className='bookstore-card'>
