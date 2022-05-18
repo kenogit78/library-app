@@ -32,3 +32,30 @@ input:focus, select:focus{
   text-decoration: none;
 }
 
+/* TABLE STYLING */
+
+.client-table-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+table {
+  border: 2px solid #93291E;
+  width: 800px;
+  height: 200px;
+  border-radius: 5px;
+  }
+  
+th {
+  border-bottom: 1px solid #000000;
+ }
+  
+td {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #93291E;
+  }
+
